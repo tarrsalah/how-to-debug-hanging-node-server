@@ -5,7 +5,7 @@ const m = () => (req, res, next) => {
   next();
 };
 
-app.use(m());
+app.use(m);
 
 app.get("/", (req, res) => {
   res.sendStatus(200);
